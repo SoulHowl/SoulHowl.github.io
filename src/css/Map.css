@@ -29,7 +29,7 @@ body{
     width: fit-content;
 }
 
-@media (max-device-width:370px){
+@media (max-device-width:420px){
     .interactive-map, .interactive-map iframe
     {
         padding: 20px 5px;
