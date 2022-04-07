@@ -81,7 +81,7 @@ body{
     background-color: #05c4f3;
 }
 
-@media (max-device-width:370px) {
+@media (max-device-width:420px) {
     .wrapper-main{
         height: available;
         position: relative;

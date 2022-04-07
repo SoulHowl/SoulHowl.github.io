@@ -117,8 +117,8 @@ header{
 }
 
 
-/*@media (max-device-width:370px){
-    header{
+@media (max-device-width:420px){
+    /*header{
         z-index: 15;
         width: 100%;
         margin-top: 0px;
@@ -228,5 +228,5 @@ header{
         text-align: center;
         vertical-align: middle;
         align-items: center;
-    }
-}*/
+    }*/
+}
