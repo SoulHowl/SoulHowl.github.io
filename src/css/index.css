@@ -74,7 +74,7 @@ body{
     height: 400px;
     width: 400px;
     border-radius: 50px;
-    background-color: #05c4f3;
+   /* background-color: #05c4f3;*/
 }
 
 .pressure{
@@ -83,7 +83,7 @@ body{
     height: 400px;
     width: 400px;
     border-radius: 50px;
-    background-color: #05c4f3;
+    /*background-color: #05c4f3;*/
 }
 
 .wind{
@@ -92,7 +92,7 @@ body{
     height: 400px;
     width: 400px;
     border-radius: 50px;
-    background-color: #05c4f3;
+    /*background-color: #05c4f3;*/
 }
 
 @media (max-device-width:420px) {
