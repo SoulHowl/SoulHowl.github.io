@@ -41,6 +41,12 @@ input {
     border-radius: 5px;
     padding: 10px;
 }
+
+input.error{
+    border-color: #ff1e42;
+}
+
+
 button {
    font-family: 'PT Serif';
    background-color: #70fc20;

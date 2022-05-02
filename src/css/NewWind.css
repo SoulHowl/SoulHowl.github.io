@@ -226,7 +226,7 @@
     color: #395060;
     z-index: 8;
 }
-.directions .E {top: 0;
+.directions .W {top: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0);
@@ -258,7 +258,7 @@
     width: 30px;
     height: 30px;
 }
-.directions .W {
+.directions .E {
     top: 0;
     right: 0;
     bottom: 0;

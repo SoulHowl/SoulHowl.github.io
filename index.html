@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--meta http-equiv="refresh" content="60"-->
     <!--<meta name="viewport" content="width=device-width">-->
-
+    <link rel="stylesheet" type="text/css" href="src/css/round.css"/>
     <link rel="stylesheet" type="text/css" href="src/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="src/css/find.css"/>
     <link rel="stylesheet" type="text/css" href="src/css/navbar.css"/>
@@ -12,9 +13,23 @@
     <link rel="stylesheet" type="text/css" href="src/css/MainHumidity.css"/>
     <link rel="stylesheet" type="text/css" href="src/css/NewWind.css"/>
     <link rel="stylesheet" type="text/css" href="src/css/Wind.css"/>
+
+    <!--Background files-->
+    <link rel="stylesheet" type="text/css" href="src/css/background_rain.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/clouds.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/sunny.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/night.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/rain.css"/>
+    <!--Background files-->
     <title>Title</title>
 </head>
 <body>
+<section id="1234" class="wallpaper">
+    <!--canvas id="canvas"></canvas-->
+
+</section>
+
+
 <header>
     <nav class="dws-menu">
         <div class="logo"><a href="index.html"><img src="src/img/weblogo.jpg"  height="40" width="150"></a></div>
@@ -36,22 +51,24 @@
         <section class="temperature">
             <article class="widget">
 
-                <div class="weatherIcon"></div>
+                <div id="weather_icon" class="weatherIcon">
+                    <div id="w_icon" class="temperature_icon"></div>
+                </div>
                 <div class="weatherData">
-                    <p class="temperature-1">25&deg;</p>
-                    <p class="description">Partly Cloudy</p>
-                    <p class="city">Tirana, Albania</p>
+                    <p id="temperature" class="temperature-1">25&deg;</p>
+                    <p id="weather_state" class="description">Partly Cloudy</p>
+                    <p id="city" class="city">Minsk, Belarus</p>
                 </div>
                 <div class="date">
                     <p class="month" id="month">Month</p>
                     <p class="day" id="day">99</p>
                 </div>
                 <time>
-                    <p>12:12</p>
+                    <p id="date">12:12</p>
                 </time>
             </article>
-
         </section>
+        <script type="text/javascript" src="src/js/time.js"></script>
         <section class="find">
             <section class="top-banner">
                 <div class="container">
@@ -67,7 +84,7 @@
     </section>
     <section class="lower">
         <section class="humidity">
-            <div class="circular">
+            <!--<div class="circular">
                 <div class="inner">
                 </div>
                 <div class="outer">
@@ -86,12 +103,18 @@
                         </div>
                     </div>
                 </div>
+            </div>-->
+            <div class="container">
+                <div class="circular-progress">
+                    <div class="value-container">0%</div>
+                </div>
             </div>
         </section>
+
         <section class="pressure">
             <div class="with-digits">
                 <div class="upper-digit">
-                    <p class="upper-d">18</p>
+                    <p class="upper-d">21</p>
                 </div>
                 <div class="gauge-wrapper">
                     <div class="gauge four rischio3">
@@ -101,28 +124,29 @@
                             <div class="st slice-item"></div>
                             <div class="st slice-item"></div>
                         </div>
-                        <div class="needle"></div>
+                        <div id="needle" class="needle"></div>
                         <div class="gauge-center">
                             <div class="label">inHg</div>
-                            <div class="number">26.78</div>
+                            <div id="number" class="number">26.78</div>
                         </div>
                     </div>
                     <small><a class="NameP">Pressure</a></small>
                 </div>
-                <div class="lower-digit"><h3 class="left-d">0</h3> <h3 class="right-d">36</h3></div>
+                <div class="lower-digit"><h3 class="left-d">0</h3> <h3 class="right-d">42</h3></div>
             </div>
         </section>
+
         <section class="wind">
             <div class="container-1">
                 <div class="compass">
                     <div class="direction">
-                        <p>S
-                            <span class="mph">
+                        <p id="direction">S
+                            <span id="w_strength" class="mph">
                                 10 mph
                             </span>
                         </p>
                     </div>
-                    <div class="arrow s"></div>
+                    <div id="arrrow" class="arrow s"></div>
                     <div class="directions">
                         <div class="E">
                             <p>E</p>
@@ -205,6 +229,19 @@
 
 </section>
 
+<script type="text/javascript" src="src/js/Temperature.js"></script>
+<script type="text/javascript" src="src/js/Humidity.js"></script>
+<script type="text/javascript" src="src/js/Pressure.js"></script>
+<script type="text/javascript" src="src/js/Wind.js"></script>
 
+
+
+<script type="text/javascript" src="src/js/Current_weather.js"></script>
+<script type="text/javascript" src="src/js/Paper_changer.js"></script>
+
+<script type="text/javascript" src="src/js/clouds.js"></script>
+<script type="text/javascript" src="src/js/sunny.js"></script>
+<script type="text/javascript" src="src/js/night.js"></script>
+<script type="text/javascript" src="src/js/rain.js"></script>
 </body>
 </html>

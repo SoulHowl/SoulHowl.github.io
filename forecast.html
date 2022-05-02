@@ -272,5 +272,24 @@
     </table>
 </div>
 </div>
+
+
+
+
+
+<button id="show-modal" class="show_rose">Show wind rose</button>
+<script src="src/js/rose.js"></script>
+<script>
+    (function () {
+        // создаём модальное окно
+        var modal = $modal();
+        // при клике по кнопке #show-modal
+        document.querySelector('#show-modal').addEventListener('click', function () {
+            // отобразим модальное окно
+            modal.show();
+        });
+    })();
+</script>
+<script src="src/js/rose_draw.js"></script>
 </body>
 </html>

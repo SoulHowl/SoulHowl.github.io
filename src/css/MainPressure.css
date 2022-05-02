@@ -142,25 +142,25 @@ small,.NameP{
 }
 
 
-@-webkit-keyframes fourspeed1 {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(16deg);}
-}
+/*@-webkit-keyframes fourspeed1 {*/
+/*    0% {transform: rotate(0);}*/
+/*    100% {transform: rotate(16deg);}*/
+/*}*/
 
-@-webkit-keyframes fourspeed2 {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(65deg);}
-}
+/*@-webkit-keyframes fourspeed2 {*/
+/*    0% {transform: rotate(0);}*/
+/*    100% {transform: rotate(65deg);}*/
+/*}*/
 
-@-webkit-keyframes fourspeed3 {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(115deg);}
-}
+/*@-webkit-keyframes fourspeed3 {*/
+/*    0% {transform: rotate(0);}*/
+/*    100% {transform: rotate(115deg);}*/
+/*}*/
 
-@-webkit-keyframes fourspeed4 {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(164deg);}
-}
+/*@-webkit-keyframes fourspeed4 {*/
+/*    0% {transform: rotate(0);}*/
+/*    100% {transform: rotate(164deg);}*/
+/*}*/
 
 @media (max-device-width:370px) {
     /*.with-digits{
