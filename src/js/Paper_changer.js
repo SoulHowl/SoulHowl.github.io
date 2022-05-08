@@ -9,7 +9,7 @@ function change_wallPaper(state)
     console.log("WALLPAPER CHANGER START")
     for (let i=0; i<document.styleSheets.length; i++) {
 
-        if (i >= 10)
+        if (i >= 9)
         {void(document.styleSheets.item(i).disabled=true);}}
     var myDdte = new Date()
     let hours = myDdte.getHours()
@@ -25,7 +25,7 @@ function change_wallPaper(state)
 
               //phenomenons['cloudy']
             for (let i=0; i<document.styleSheets.length; i++) {
-                if (i === 10)
+                if (i === 9)
                 {void(document.styleSheets.item(i).disabled=false);}
             }
             document.getElementById('1234').innerHTML ="<canvas id='canvas_cl' class='canvas_clouds'></canvas>";
@@ -36,7 +36,7 @@ function change_wallPaper(state)
             console.log("DAY")
             document.getElementById('1234').innerHTML =  phenomenons['day_clear']
             for (let i=0; i<document.styleSheets.length; i++) {
-                if (i === 11)
+                if (i === 10)
                 {void(document.styleSheets.item(i).disabled=false);}
             }
             setTimeout(from_sun_to_heart, 1000);
@@ -45,7 +45,7 @@ function change_wallPaper(state)
         {
             document.getElementById('1234').innerHTML =  phenomenons['day_rainy']
             for (let i=0; i<document.styleSheets.length; i++) {
-                if (i === 13)
+                if (i === 12)
                 {void(document.styleSheets.item(i).disabled=false);}
             }
             setTimeout(setup_rain, 1000);
@@ -57,7 +57,7 @@ function change_wallPaper(state)
             console.log("NIGHT")
             document.getElementById('1234').innerHTML = phenomenons['night_clear']
             for (let i = 0; i < document.styleSheets.length; i++) {
-                if (i === 12) {
+                if (i === 11) {
                     void (document.styleSheets.item(i).disabled = false);
                 }
             }
