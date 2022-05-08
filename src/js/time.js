@@ -23,7 +23,7 @@ function update_time()
     }
     document.getElementById('date').innerHTML = h + ':' + m;
     document.getElementById('month').innerHTML = months[myDate.getMonth()];
-    document.getElementById('day').innerHTML = (myDate.getDay() + 1).toString();
+    document.getElementById('day').innerHTML = (myDate.getDate() ).toString();
 
 }
 update_time()

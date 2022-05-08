@@ -61,8 +61,8 @@ function update_weather(current)
     update_widget_humidity(current.humidity)
     update_pressure_widget(current.pressure)
     update_wind_widget(current.wind_str,current.wind_dir)
-    //change_wallPaper(current.state)
-    change_wallPaper("Clear")
+    change_wallPaper(current.state)
+
 
 }
 
