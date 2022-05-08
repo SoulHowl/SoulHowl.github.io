@@ -31,11 +31,11 @@ function weatherBalloon( cityID ) {
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)
         .then(function(resp) { return resp.json() }) // Convert data to json
         .then(function(data) {
-            console.log(data);
+
             let current1 = {"temperature": 0,"state": "","humidity":0,"pressure": 0, "wind_dir": "", "wind_str": 0}
             parse_data(data, current1);
             update_weather(current1)
-            //console.log(res)
+
         })
         .catch(function() {
             // catch any errors
@@ -63,7 +63,7 @@ function update_weather(current)
     update_wind_widget(current.wind_str,current.wind_dir)
     //change_wallPaper(current.state)
     change_wallPaper("Clear")
-    console.log("DATA START")
+
 }
 
 //weatherBalloon( 625144 );//Minsk
